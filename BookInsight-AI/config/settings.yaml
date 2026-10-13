@@ -1,0 +1,54 @@
+# BookInsight-AI Configuration
+# Copy this file to config/local.yaml and customize for your environment
+
+# Scraper settings
+scrapers:
+  # Rate limiting (requests per second)
+  rate_limit: 1.0
+  # Request timeout in seconds
+  timeout: 30
+  # Maximum retries for failed requests
+  max_retries: 3
+  # User agent string
+  user_agent: "BookInsight-AI/1.0 (+https://github.com/yourusername/bookinsight-ai)"
+
+# Goodreads scraper settings
+goodreads:
+  enabled: true
+  base_url: "https://www.goodreads.com"
+  # Note: Goodreads requires authentication for most operations
+  # You'll need to implement OAuth or use a different approach
+
+# Google Books API settings
+google_books:
+  enabled: true
+  api_key: ""  # Get from Google Cloud Console
+  base_url: "https://www.googleapis.com/books/v1"
+  max_results: 40
+
+# Open Library settings
+openlibrary:
+  enabled: true
+  base_url: "https://openlibrary.org"
+  covers_base_url: "https://covers.openlibrary.org"
+
+# Database settings
+database:
+  type: "sqlite"
+  path: "data/bookinsight.db"
+  echo: false  # Set to true for SQL debugging
+
+# Export settings
+export:
+  default_format: "json"
+  output_dir: "exports"
+  formats:
+    - json
+    - csv
+    - excel
+
+# Logging settings
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/bookinsight.log"
