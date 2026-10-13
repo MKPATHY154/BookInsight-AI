@@ -2,6 +2,12 @@
 
 BookInsight AI is a Python-based book analytics dashboard that collects, stores, analyzes, and displays book information through an interactive web interface.
 
+## 🌐 Live Demo
+
+**Try BookInsight AI here:** https://bookinsight-ai-ive4alhobpeusjckdzlgf2.streamlit.app/
+
+Explore book data, analytics, visualizations, and the dashboard's available features.
+
 ## Features
 
 - **Book Data Collection:** Scrape book information from Books to Scrape.
