@@ -10,7 +10,7 @@ Explore book data, analytics, visualizations, and the dashboard's available feat
 
 ## 📸 Dashboard Preview
 
-![BookInsight AI Dashboard](screenshots/dashboard.png)
+![BookInsight AI Dashboard](screenshorts/dashboard.png)
 
 ## Features
 
